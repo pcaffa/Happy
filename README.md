@@ -2,6 +2,8 @@
 	Happy
 </h1> 
 
+![Happy](https://user-images.githubusercontent.com/66217885/95759094-a6938e00-0c7f-11eb-911e-fa12fedfc170.png)
+
 <p>&nbsp;&nbsp;</p>
 
 <p align="center">
@@ -30,7 +32,7 @@
 
  Projeto para localizar orfanatos próximos para que possamos visitar crianças, pois o maior presente para elas nesse dia das crianças é carinho e atenção!
 
- Projeto criado durante a NLW 3 12 a 18 de outubro de 2020, evento da Rocketseat 🚀 
+ Projeto criado durante a NLW 3 nos dias 12 à 18 de outubro de 2020, evento da Rocketseat 🚀 
 
 <p>&nbsp;&nbsp;</p>
 
