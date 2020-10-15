@@ -46,6 +46,7 @@ O projeto foi desenvolvido usando as seguintes tecnologias
 
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
+- [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
 
 <p>&nbsp;&nbsp;</p>
 
