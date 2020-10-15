@@ -47,6 +47,9 @@ O projeto foi desenvolvido usando as seguintes tecnologias
 - [HTML](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
 - [CSS](https://developer.mozilla.org/pt-BR/docs/Web/CSS)
 - [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript)
+- [Node] (https://nodejs.org/en/)
+- [Express] (https://expressjs.com/pt-br/)
+- [Handlebarsjs] (https://handlebarsjs.com/guide/)
 
 <p>&nbsp;&nbsp;</p>
 
