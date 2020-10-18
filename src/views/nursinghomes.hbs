@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Localize um Lar de idosos | Happy</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+    crossorigin=""/>
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script>
+
+    <link rel="icon" href="/images/logo-icon-orange.png" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/map.css" />
+    <link rel="stylesheet" href="/css/page-nursinghomes.css" />
+
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div id="page-nursinghomes">
+      <aside class="animate-right">
+        <header>
+          <img src="/images/map-marker.svg" alt="Happy">
+
+          <h2>Escolha um lar da melhor idade
+            <img class="animate-pulse" src="/images/heart.svg" alt="Coração"> 
+          </h2>          
+
+          <p>Muitos vovôs e vovós estão esperando sua visita.</p> 
+          <p>Muitos precisam de doações, seja de amor quanto de produtos. Veja onde poderá ajudar.</p>        
+        </header>
+
+        <footer>
+          <strong>São Paulo - SP</strong>
+            <p>Zona Sul</p>
+        </footer>
+      </aside>
+      <div id="mapid" class="animate-appear"></div>
+
+      <div class="nursinghomes">
+        {{#each nursinghomes}}
+          <span hidden
+            data-id="{{this.id}}"
+            data-name="{{this.name}}"
+            data-lat="{{this.lat}}"
+            data-lng="{{this.lng}}"
+          ></span>
+        {{/each}}
+      </div>
+      
+        <a href="/create-nursinghome" class="create-nursinghome" title="Cadastre um lar de idosos">
+          <img src="/images/plus.svg" alt="Criar um lar de idosos">
+        </a>      
+    </div>
+
+    <script src="/scripts/page-nursinghomes.js"></script>
+    
+  </body>
+</html>

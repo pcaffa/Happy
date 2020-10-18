@@ -28,6 +28,18 @@
   }
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
 .animate-up {
   animation-name: up;
   animation-duration: 300ms;
@@ -43,4 +55,10 @@
   animation-name: appear;
   animation-duration: 300ms;
   animation-fill-mode: backwards;
+}
+
+.animate-pulse {
+  animation-name: pulse;
+	transform: scale(0.8);
+	animation: pulse 500ms infinite;
 }

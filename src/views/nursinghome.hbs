@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> {{nursinghome.name}}| Happy</title>
+
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+
+    <!-- Make sure you put this AFTER Leaflet's CSS -->
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+
+    <link rel="icon" href="/images/logo-icon-orange.png" />
+
+    <link rel="stylesheet" href="/css/main.css" />
+    <link rel="stylesheet" href="/css/animations.css" />
+    <link rel="stylesheet" href="/css/sidebar.css" />
+    <link rel="stylesheet" href="/css/map.css" />
+    <link rel="stylesheet" href="/css/page-nursinghome.css" />
+    <link rel="stylesheet" href="/css/buttons.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="page-nursinghome">
+      <aside class="animate-right sidebar">
+        <img src="/images/map-marker.svg" alt="Happy" />
+
+        <footer>
+          <button onclick="history.back()">
+            <img src="/images/arrow-back.svg" alt="Voltar" />
+          </button>
+        </footer>
+      </aside>
+
+      <main class="animate-appear with-sidebar">
+        <div class="nursinghome-details">
+          <img src="{{nursinghome.images}}" alt="{{nursinghome.name}}" />
+
+          <div class="images">
+            {{#each nursinghome.images}}
+              <button onclick="selectImage(event)" type="button">
+                <img src="{{this}}" alt="{{nursinghome.name}}" />
+              </button>
+            {{/each}}
+          </div>
+
+          <div class="nursinghome-details-content">
+            <h1>{{nursinghome.name}}</h1>
+
+            <p>{{nursinghome.about}}</p>
+
+            <div class="map-container">
+              <div id="mapid"></div>
+              <span hidden
+                data-lat="{{nursinghome.lat}}"
+                data-lng="{{nursinghome.lng}}"
+              >                
+              </span>
+              <footer>
+                <a target="_blank" href="http://maps.google.com/mobile?q={{nursinghome.lat}},{{nursinghome.lng}}&z=15">Ver rotas no Google Maps</a>
+              </footer>
+            </div>
+
+            <hr/>
+
+            <h2>Instruções para visita/doações</h2>
+
+            <p>{{nursinghome.instructions}}</p>
+
+            <div class="open-details">
+              <div class="hour">
+                <img src="/images/clock.svg" alt="Horários" />
+                  {{nursinghome.opening_hours}}
+              </div>
+
+              {{#if nursinghome.open_on_weekends }}
+                <div class="open-on-weekends open">
+                  <img src="/images/info.svg" alt="Informação" />
+                    Atendemos fim de semana
+                </div>
+              {{else}}
+                <div class="open-on-weekends closed">
+                  <img src="/images/info-red.svg" alt="Informação" />
+                    Não atendemos fim de semana
+              </div>
+              {{/if}}
+            </div>
+
+            <a href="https://api.whatsapp.com/send?1=pt_BR&phone={{nursinghome.whatsapp}}&text=Olá, gostaria de conversar sobre as visitas e doações do lar de idosos: {{nursinghome.name}}" target="_blank" class="primary-button" type="button">
+              <img
+                src="/images/whatsapp.svg"
+                alt="chamar no WhatsApp"
+              />
+              Entrar em contato
+            </a>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="/scripts/page-nursinghome.js"></script>
+  </body>
+</html>

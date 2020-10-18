@@ -1,5 +1,7 @@
+
+
 #page-landing {
-  background: linear-gradient(329.54deg, #29b6d1 0%, #00c7c7 100%);
+  background: linear-gradient(329.54deg, var(--color-primary)  0%, var(--color-primary-lighter) 100%);
 
   text-align: center;
   min-height: 100vh;
@@ -46,7 +48,7 @@ main h1 {
   width: 8rem;
   height: 8rem;
 
-  background: #ffd666;
+  background: var(--color-secondary);
 
   border: none;
   border-radius: 3rem;
@@ -61,7 +63,7 @@ main h1 {
 }
 
 .visit a:hover {
-  background: #96feff;
+  background: var(--color-secondary-lighter);
 }
 
 /*DESKTOP VERSION*/
@@ -69,7 +71,7 @@ main h1 {
   #container {
     padding: 5rem 2rem;
     /*shorthand background:image repeat position / size  */
-    background: url("../images/bg.svg") no-repeat 80% /
+    background: url("../images/gradma_wanr.svg") no-repeat 80% /
       clamp(30rem, 54vw, 56rem);
   }
 

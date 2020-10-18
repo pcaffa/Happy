@@ -4,6 +4,7 @@ const pages = require('./pages.js')
 
 const server = express()
 server
+    .use(express.urlencoded({ extended: true }))
     //using static files
     .use(express.static('public')) 
 
@@ -13,8 +14,12 @@ server
 
     //routes
     .get('/', pages.index)
-    .get('/orphanage', pages.orphanage)
-    .get('/orphanages', pages.orphanages)
-    .get('/create-orphanage', pages.createOrphanage)
+    .get('/nursinghome', pages.nursinghome)
+    .get('/nursinghomes', pages.nursinghomes)
+    .get('/create-nursinghome', pages.createNursingHome)
+    .post('/save-nursinghome', pages.saveNursingHome)
+
+    //using status 404 page not found to wrong route 
+    .use(pages.notFound)
 
 server.listen(5500)

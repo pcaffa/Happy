@@ -1,0 +1,137 @@
+#page-nursinghome {
+    display: flex;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+/*DETAILS*/
+.nursinghome-details {
+    width: 70rem;
+    margin: 6.4rem auto;
+    background: white;
+    border: 1px solid #D3E2E5;
+
+    border-radius: 2rem;
+
+    overflow: hidden;
+}
+
+/* > img só vai pegar as img do primeiro nivel, ou seja, no nosso html não irá pegar as img dentro do button pq elas são de 3º nivel*/
+.nursinghome-details > img {
+    width: 100%;
+    height: 30rem;
+    object-fit: cover; /*ajusta a imagem de todos os lados, p/ não deixa-la com aspecto de esticada*/
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    column-gap: 1.6rem;
+    margin: 16px 40px 0;
+
+}
+
+.images button {
+    border: 0;
+    background: none;
+    border-radius: 2rem;
+
+    height: 8.8rem;
+    cursor: pointer;
+
+    overflow: hidden;
+    opacity: 0.6;
+}
+
+.images button:hover,
+.images button.active {
+    opacity: 1;
+}
+
+.images button img {
+    width: 100%;
+    height: 8.8rem;
+    object-fit: cover;
+}
+
+.nursinghome-details-content {
+    padding: 8rem
+}
+
+.nursinghome-details-content h1 {
+    color: var(--color-text-title);
+    font-size: 5.4rem;
+    line-height: 1.5;
+    margin-bottom: 0.8rem;
+}
+
+.nursinghome-details-content p {
+    line-height: 1.6;
+    color: var(--color-text-complement);
+    margin-top: 2.4rem;
+}
+
+.nursinghome-details-content hr {
+    width: 100%;
+    height: 1px;
+
+    border: 0;
+
+    background: #D3E2E6;
+
+    margin: 6rem 0;
+
+}
+
+.nursinghome-details-content h2 {
+    font-size: 3.6rem;
+    line-height: 1.5rem;
+    color: #4d6f80
+}
+
+.open-details {
+    margin-top: 2.4rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+
+    line-height: 1.3;
+}
+
+.open-details div {
+    padding: 3.2rem 2.4rem;
+}
+
+.open-details img {
+    display: block;
+
+    margin-bottom: 2rem;
+}
+
+.open-details .hour {
+    background: linear-gradient(149.97deg, var(--color-text-complement-lighter) 8.13%, white 92.67%);
+    border: 1px solid var(--color-text-complement-light);
+    border-radius: 20px;
+
+    color: var(--color-text-complement);
+}
+
+.open-details .open-on-weekends {
+    border-radius: 20px;
+}
+
+.open-details .open-on-weekends.open{
+    background: linear-gradient(154.15deg, var(--color-info-open-lighter) 7.85%, white 91.03%);
+    border: 1px solid var(--color-info-open);    
+    color: var(--color-info-open-dark);
+}
+
+.open-details .open-on-weekends.closed {
+    background: linear-gradient(154.15deg, var(--color-info-closed-lighter) 7.85%, white 91.03%);
+    border: 1px solid var(--color-info-closed);    
+    color: var(--color-info-closed-dark);
+}

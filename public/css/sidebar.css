@@ -2,7 +2,7 @@ aside.sidebar {
     position: fixed;
     height: 100%;
     padding: 32px 24px;
-    background: #15C3D6;
+    background: var(--color-primary);
 
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ aside.sidebar footer button {
     width: 48px;
     height: 48px;
     border:none;
-    background: #12AFCB;
+    background: var(--color-primary-dark);
     border-radius: 1.6rem;
     cursor: pointer;
 
@@ -34,7 +34,7 @@ aside.sidebar footer button {
 }
 
 aside.sidebar footer button:hover {
-    background: #17D6EB;
+    background: var(--color-primary-lighter);
 }
 
 .with-sidebar {

@@ -2,7 +2,7 @@
 	Happy
 </h1> 
 
-![Happy](https://user-images.githubusercontent.com/66217885/95759094-a6938e00-0c7f-11eb-911e-fa12fedfc170.png)
+![Happy](public/images/gif-happy.gif)
 
 <p>&nbsp;&nbsp;</p>
 
@@ -30,9 +30,12 @@
 
 ## 💻 Projeto
 
- Projeto para localizar orfanatos próximos para que possamos visitar crianças, pois o maior presente para elas nesse dia das crianças é carinho e atenção!
+ Projeto para localizar lar de idosos próximos para que possamos visitar ou fazer doações, o maior presente para eles são carinho e atenção!
 
  Projeto criado durante a NLW 3 nos dias 12 à 18 de outubro de 2020, evento da Rocketseat 🚀 
+
+ A ideia da Rocketseat nessa semana das crianças, foi criar uma aplicação para encontrar orfanatos para visitar crianças que precisam de amor.
+ Fiz uma adaptação voltado para lar de idosos, pois já visitei e vi a alegria no olhar deles quando recebem visita, então o tema do projeto me recordou desse momento, por isso a adaptação.
 
 <p>&nbsp;&nbsp;</p>
 
@@ -50,6 +53,7 @@ O projeto foi desenvolvido usando as seguintes tecnologias
 - [Node](https://nodejs.org/en/)
 - [Express](https://expressjs.com/pt-br/)
 - [Handlebars](https://handlebarsjs.com/guide/)
+- [SQLite](https://www.sqlite.org/index.html)
 
 <p>&nbsp;&nbsp;</p>
 

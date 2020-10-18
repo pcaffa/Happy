@@ -1,0 +1,41 @@
+.error {
+    background: linear-gradient(329.54deg, var(--color-primary)  0%, var(--color-primary-lighter) 100%);
+    
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    justify-content:center;
+    
+}
+
+.error h1 {
+    color: var(--color-primary);
+    font-weight: bold;
+    font-size: 6rem;
+    margin: 5rem 0 3rem 0;
+}
+
+.error p {
+    color: var(--color-primary-dark);
+    font-weight: bold;
+    font-size: 3.1rem;
+}
+
+.error p a {
+    text-decoration: none;
+    color: var(--color-secondary-dark);
+    cursor: pointer;
+}
+
+.error p a:hover {
+    color: var(--color-secondary);
+}
+
+.error img {
+    width: 70rem;
+    height: 45rem;    
+
+    margin-top: 10rem;
+}

@@ -17,9 +17,13 @@
     justify-content: center;
 
     transition: background-color .2s;
+    
+    text-decoration: none;
+    outline: none;
 }
 
 .primary-button:hover {
+    border:  1px solid #398660;    
     background: #36cf82;
 }
 
